@@ -111,7 +111,7 @@ public class HTMLDiffer implements Differ{
     /**
      * {@inheritDoc}
      */
-    public void diff(TextNodeComparator leftComparator,
+    public int diff(TextNodeComparator leftComparator,
             TextNodeComparator rightComparator) throws SAXException {
         LCSSettings settings = new LCSSettings();
         settings.setUseGreedyMethod(false);
@@ -148,7 +148,11 @@ public class HTMLDiffer implements Differ{
         }
 
         rightComparator.expandWhiteSpace();
-        output.generateOutput(rightComparator.getBodyNode());
+        if (pdifferences.size() > 0) {
+            output.generateOutput(rightComparator.getBodyNode());
+        }
+
+        return pdifferences.size();
     }
 
     private List<RangeDifference> preProcess(RangeDifference[] differences) {
