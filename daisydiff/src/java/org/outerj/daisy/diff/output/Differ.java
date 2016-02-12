@@ -35,6 +35,6 @@ public interface Differ {
 	 * @param rightComparator Root of the second tree.
 	 * @throws SAXException something went wrong with parsing of the trees.
 	 */
-	void diff(TextNodeComparator leftComparator,
+	int diff(TextNodeComparator leftComparator,
             TextNodeComparator rightComparator) throws SAXException;
 }
