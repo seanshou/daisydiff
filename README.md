@@ -20,7 +20,7 @@ The Java version is licensed under the Apache License v2. The PHP version is GPL
 * The default GUI allows easy browsing of the modifications through keyboard shortcuts and links.
 # Download
 
-A stand-alone Java library is available in the [download section](http://code.google.com/p/daisydiff/downloads/list). To embed Daisy Diff in your application you can checkout [our Subversion repository](http://code.google.com/p/daisydiff/source) (The [Main class](http://code.google.com/p/daisydiff/source/browse/trunk/daisydiff/src/java/org/outerj/daisy/diff/Main.java) is a good starting point). The PHP implementation is available in the [MediaWiki repository](http://www.mediawiki.org/wiki/Subversion).
+A stand-alone Java library is available in the [download section](http://code.google.com/p/daisydiff/downloads/list). To embed Daisy Diff in your application you can checkout [our Subversion repository](http://code.google.com/p/daisydiff/source) (The [Main class](https://github.com/seanshou/daisydiff/blob/master/daisydiff/src/java/org/outerj/daisy/diff/Main.java) is a good starting point). The PHP implementation is available in the [MediaWiki repository](http://www.mediawiki.org/wiki/Subversion).
 
 # Contact
 
